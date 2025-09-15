@@ -1,0 +1,295 @@
+:root {
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+@font-face {
+  font-family: "PressStyleSerif";
+  src: url("./fonts/Press\ Style\ Serif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-toggler {
+  background-color: #444343;
+}
+
+.restaurent-name {
+  font-family: PressStyleSerif;
+  font-size: 70px;
+  color: rgb(199, 4, 4);
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  height: auto;
+  background-color: #333;
+}
+
+footer {
+  padding: 20px 0;
+  height: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+span {
+  color: rgb(199, 4, 4);
+  font-weight: bold;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.offer-img {
+  width: 65px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.offer-img:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  font-family: PressStyleSerif;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 1rem 0;
+  color: rgb(177, 2, 2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials a {
+  transition: color 0.5s ease-in-out;
+  color: #333;
+}
+
+.socials a:hover {
+  color: rgb(177, 2, 2);
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.portfolio {
+  margin-top: 15px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  align-items: stretch; /* makes all cards equal height */
+}
+
+.product-card {
+  width: 288px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-image-container {
+  width: 176px;
+  height: 176px;
+  position: relative;
+  margin: 0 0 0 0;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shine-effect {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  transform: skewX(-12deg);
+  opacity: 0.4;
+}
+
+.product-card:hover .shine-effect {
+  animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.product-content {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 0 0 12px 12px;
+  min-height: 150px;
+  margin-top: -40px;
+  box-shadow: var(--shadow);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  color: rgb(177, 2, 2);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-top: 20px;
+}
+
+.product-description {
+  color: #747272;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.product-footer {
+  margin-top: auto;
+}
+
+.product-price > span {
+  color: #333;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.product-price .first-price,
+.product-price .second-price,
+.product-price .third-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.product-price .first-price span,
+.product-price .second-price span,
+.product-price .third-price span {
+  display: block;
+}
+
+.product-price .first-price > :nth-child(1),
+.product-price .second-price > :nth-child(1),
+.product-price .third-price > :nth-child(1) {
+  background-color: rgb(199, 4, 4);
+  border-radius: 5px;
+  padding: 0.2rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 2px;
+}
+
+.product-price .first-price > :nth-child(2),
+.product-price .second-price > :nth-child(2),
+.product-price .third-price > :nth-child(2) {
+  color: #333;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .offer-img {
+    width: 70px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer-img {
+    width: 50px;
+    margin-top: 10px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 50px !important;
+  }
+
+  .d-flex.gap-2 {
+    gap: 5px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .map-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  .map-container {
+    width: 300px;
+    height: 300px;
+  }
+}
