@@ -107,12 +107,14 @@ function displayProducts(categoryId = null) {
 // Function to set up category navigation
 function setupCategoryNavigation() {
   const navLinks = document.querySelectorAll("a[data-category]");
+  const categoryTitle = document.getElementById("category-title");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const categoryId = this.getAttribute("data-category");
       displayProducts(categoryId);
+      categoryTitle.scrollIntoView({ behavior: "smooth" });
     });
   });
 }
