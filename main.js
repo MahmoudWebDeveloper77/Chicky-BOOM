@@ -135,3 +135,15 @@ document.getElementById("restaurent-name").addEventListener("click", () => {
     });
   });
 });
+
+document.addEventListener("scroll", () => {
+  const header = document.getElementById("header");
+  const hero = document.querySelector(".hero");
+  const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+  if (window.scrollY > heroBottom - 300) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
