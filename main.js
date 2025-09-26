@@ -47,27 +47,19 @@ function createProductCard(item) {
       .join("");
   }
 
-  return `
-          <div class="product-card">
-            <div class="product-image-container">
-              <img
-                src="${item.image}"
-                alt="${item.name}"
-                class="product-image"
-              />
+  return `<div class="menu-card">
+            <div class="menu-image-container">
+              <img src="${item.image}"  />
+            </div>
+            <div class="inner-menu-card">
+              <h3>${item.name}</h3>
+              <p>
+                ${item.description}
+              </p>
+              <div class="menu-price">${priceHTML}</div>
               <div class="shine-effect"></div>
             </div>
-            <div class="product-content">
-              <p class="product-title">${item.name}</p>
-              <p class="product-description">${item.description}</p>
-              <div class="product-footer">
-                <div class="product-price">
-                  ${priceHTML}
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
+          </div>`;
 }
 
 // Function to display products by category
@@ -78,11 +70,11 @@ function displayProducts(categoryId = null) {
     return;
   }
 
-  const productsContainer = document.getElementById("products-container");
+  const menuContainer = document.getElementById("menu-container");
   const categoryTitle = document.getElementById("category-title");
 
   // Clear existing products
-  productsContainer.innerHTML = "";
+  menuContainer.innerHTML = "";
 
   if (categoryId) {
     // Show specific category
@@ -90,7 +82,7 @@ function displayProducts(categoryId = null) {
     if (category) {
       categoryTitle.textContent = category.name.toUpperCase();
       category.items.forEach((item) => {
-        productsContainer.innerHTML += createProductCard(item);
+        menuContainer.innerHTML += createProductCard(item);
       });
     }
   } else {
@@ -98,7 +90,7 @@ function displayProducts(categoryId = null) {
     categoryTitle.textContent = "FULL MENU";
     menuData.categories.forEach((category) => {
       category.items.forEach((item) => {
-        productsContainer.innerHTML += createProductCard(item);
+        menuContainer.innerHTML += createProductCard(item);
       });
     });
   }
@@ -126,14 +118,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById("restaurent-name").addEventListener("click", () => {
-  const productsContainer = document.getElementById("products-container");
+  const menuContainer = document.getElementById("menu-container");
   const categoryTitle = document.getElementById("category-title");
 
-  productsContainer.innerHTML = "";
+  menuContainer.innerHTML = "";
   categoryTitle.textContent = "FULL MENU";
   menuData.categories.forEach((category) => {
     category.items.forEach((item) => {
-      productsContainer.innerHTML += createProductCard(item);
+      menuContainer.innerHTML += createProductCard(item);
     });
   });
 });
@@ -145,6 +137,13 @@ document.addEventListener("scroll", () => {
 
   if (window.scrollY > heroBottom - 300) {
     header.classList.add("scrolled");
+
+    // Close the navbar if it is open
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+      bsCollapse.hide();
+    }
   } else {
     header.classList.remove("scrolled");
   }
