@@ -23,7 +23,14 @@ body {
 
 .scrolled {
   background-color: #333 !important;
-  backdrop-filter: blur(6px);
+}
+
+.colored {
+  background: none !important;
+  color: rgb(199, 4, 4) !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: initial !important;
 }
 
 .hero {
@@ -46,7 +53,16 @@ body {
 .restaurent-name {
   font-family: PressStyleSerif;
   font-size: 70px;
-  color: rgb(199, 4, 4);
+  background: linear-gradient(
+    90deg,
+    #ffd700 0%,
+    #ffc300 35%,
+    #ffb300 65%,
+    #fff8dc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
 }
 
@@ -62,9 +78,9 @@ header {
   width: 100%;
   padding: 20px 0;
   transition: background-color 0.3s ease;
-  background: transparent !important;
-  z-index: 1000;
+  background: transparent;
   height: auto;
+  z-index: 1000;
 }
 
 footer {
@@ -159,14 +175,14 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border: 2px solid #e94e77;
+  border: 2px solid rgb(177, 2, 2);
   border-radius: 12px;
   width: 270px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   cursor: pointer;
-  height: 420px; /* Fixed height for all cards */
+  height: 400px;
 }
 
 .inner-menu-card {
@@ -186,6 +202,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(199, 4, 4);
+  font-weight: 600;
 }
 
 .inner-menu-card p {
@@ -202,7 +220,7 @@ a {
 
 .menu-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
 
 .menu-card img {

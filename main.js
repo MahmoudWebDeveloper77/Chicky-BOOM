@@ -134,9 +134,11 @@ document.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   const hero = document.querySelector(".hero");
   const heroBottom = hero.offsetTop + hero.offsetHeight;
+  const restaurantName = document.getElementById("restaurent-name");
 
   if (window.scrollY > heroBottom - 300) {
     header.classList.add("scrolled");
+    restaurantName.classList.add("colored");
 
     // Close the navbar if it is open
     const navbarCollapse = document.getElementById("navbarNav");
@@ -146,5 +148,6 @@ document.addEventListener("scroll", () => {
     }
   } else {
     header.classList.remove("scrolled");
+    restaurantName.classList.remove("colored");
   }
 });
