@@ -79,7 +79,7 @@ header {
   padding: 20px 0;
   transition: background-color 0.3s ease;
   background: transparent;
-  height: 130px;
+  height: auto;
   z-index: 1000;
 }
 
@@ -351,6 +351,15 @@ a {
 
   .d-flex.gap-2 {
     gap: 5px !important;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+  .hero video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
