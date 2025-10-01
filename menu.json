@@ -157,6 +157,13 @@
       "name": "Boomy Meals",
       "items": [
         {
+          "id": "mini-boom",
+          "name": "MINI BOOM",
+          "description": "قطعتان فرايد شيكن + فرايز + 1 كلو سلو + 2 كيزر + 2 كاتشب",
+          "image": "./menu-images/mini boom.jpeg",
+          "prices": [{ "price": "125 EGP" }]
+        },
+        {
           "id": "boomy-3",
           "name": "BOOMY 3",
           "description": "ثلاث قطع فرايد شيكن + فرايز + 1 كلو سلو + 2 كيزر + 2 كاتشب",
@@ -197,13 +204,6 @@
           "description": "عشرون قطعه فرايد شيكن + 6 فرايز + 4 كلو سلو + 8 كيزر + 15 كاتشب + 2.5L",
           "image": "./menu-images/boomy 20.jpeg",
           "prices": [{ "price": "1050 EGP" }]
-        },
-        {
-          "id": "mini-boom",
-          "name": "MINI BOOM",
-          "description": "قطعتان فرايد شيكن + فرايز + 1 كلو سلو + 2 كيزر + 2 كاتشب",
-          "image": "./menu-images/mini boom.jpeg",
-          "prices": [{ "price": "125 EGP" }]
         },
         {
           "id": "mac-cheese",
