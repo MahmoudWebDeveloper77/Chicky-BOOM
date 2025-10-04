@@ -60,7 +60,7 @@
           "id": "boomy-strips-5",
           "name": "BOOMY STRIPS 5",
           "description": "خمس قطع كرسبي استربس + 2 كيزر + فرايز + باربكيو + واحد كلو سلو",
-          "image": "../menu-images/Boomy strips.jpeg",
+          "image": "./menu-images/Boomy strips.jpeg",
           "prices": [{ "price": "210 EGP" }]
         },
         {
