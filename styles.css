@@ -174,7 +174,7 @@ a {
 .menu-card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #dbdada;
   border: 2px solid rgb(177, 2, 2);
   border-radius: 12px;
   width: 270px;
