@@ -345,6 +345,13 @@
           "prices": [{ "price": "75 EGP" }]
         },
         {
+          "id": "strips-fries",
+          "name": "Strips Fries",
+          "description": "بطاطس مقلية مقرمشة وذهبية",
+          "image": "./menu-images/strips fries.jpeg",
+          "prices": [{ "price": "75 EGP" }]
+        },
+        {
           "id": "roast-beef",
           "name": "ROAST BEEF",
           "description": "شرائح لحم البقر المشوي الطري",
