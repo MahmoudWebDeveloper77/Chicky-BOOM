@@ -338,6 +338,13 @@
           "prices": [{ "price": "60 EGP" }]
         },
         {
+          "id": "smash-fries",
+          "name": "SMASH FRIES",
+          "description": "بطاطس مقلية مقرمشة وذهبية",
+          "image": "./menu-images/Smash fries.jpeg",
+          "prices": [{ "price": "75 EGP" }]
+        },
+        {
           "id": "roast-beef",
           "name": "ROAST BEEF",
           "description": "شرائح لحم البقر المشوي الطري",
