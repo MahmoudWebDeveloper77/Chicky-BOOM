@@ -65,6 +65,7 @@ body {
   justify-content: center;
   text-transform: uppercase;
   line-height: 1.2;
+  margin: auto;
   width: 100%;
 }
 
