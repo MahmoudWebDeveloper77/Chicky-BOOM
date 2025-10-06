@@ -30,7 +30,7 @@
           "id": "doggo",
           "name": "DOGGO",
           "description": "شرايح هوت دوج + فلفل اخضر + جزر + بصل + صوص بوم المميز + صوص المايونيز",
-          "image": "./menu-images/DOGGIE.png",
+          "image": "./menu-images/doggo.png",
           "prices": [
             { "size": "MEDIUM", "price": "100 EGP" },
             { "size": "LARGE", "price": "140 EGP" }
