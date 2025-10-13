@@ -257,7 +257,7 @@
           "id": "smash-fries",
           "name": "SMASH FRIES",
           "description": "بطاطس + قطعه لحمه سماش + صوص التكساس + صوص شيدر",
-          "image": "./menu-images/Smash fries.jpeg",
+          "image": "./menu-images/smash fries.jpeg",
           "prices": [{ "price": "75 EGP" }]
         },
         {
