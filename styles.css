@@ -203,6 +203,11 @@ a {
   border-radius: 12px;
 }
 
+.socials p a {
+  margin: 0 6px;
+  display: inline-block;
+}
+
 .map-container iframe {
   position: absolute;
   top: 0;
