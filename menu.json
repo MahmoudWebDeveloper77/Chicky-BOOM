@@ -1,6 +1,67 @@
 {
   "categories": [
     {
+      "id": "offers",
+      "name": "Offers",
+      "items": []
+    },
+    {
+      "id": "chicken-sandwiches",
+      "name": "Chicken Sandwiches",
+      "items": [
+        {
+          "id": "big-boom",
+          "name": "BIG BOOM",
+          "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + موزاريلا + خيار مخلل",
+          "image": "./menu-images/Big boom.png",
+          "prices": [
+            { "size": "SINGLE", "price": "145 EGP" },
+            { "size": "DOUBLE", "price": "180 EGP" },
+            { "size": "TRIPLE", "price": "220 EGP" }
+          ]
+        },
+        {
+          "id": "original-chick",
+          "name": "ORIGINAL CHICK",
+          "description": "قطعه من صدور الدجاج المقرمشه بصوص الزبده + كلو سلو + جبنه شيدر",
+          "image": "./menu-images/original chick.png",
+          "prices": [{ "price": "140 EGP" }]
+        },
+        {
+          "id": "onion-boom",
+          "name": "ONION BOOM",
+          "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + حلقات بصل + بصل مكرمل",
+          "image": "./menu-images/onion boom.jpeg",
+          "prices": [
+            { "size": "SINGLE", "price": "145 EGP" },
+            { "size": "DOUBLE", "price": "180 EGP" },
+            { "size": "TRIPLE", "price": "220 EGP" }
+          ]
+        },
+        {
+          "id": "chick-inferno",
+          "name": "CHICK INFERNO",
+          "description": "قطعه من صدور الفراخ المقرمشه مغطى بصوص حار جداً + كلو سلو + صوص الجبنه",
+          "image": "./menu-images/Chick inferno.jpeg",
+          "prices": [{ "price": "220 EGP" }]
+        },
+        {
+          "id": "sub-boom",
+          "name": "SUB BOOM",
+          "description": "صدور الدجاج المشويه المتبله بالتدبيله السرية + حلقات البصل المشوي + الخس + شرايح الطماطم + صوص المايونيز + خيار مخلل",
+          "image": "./menu-images/sub boom.jpeg",
+          "prices": [{ "price": "140 EGP" }]
+        },
+        {
+          "id": "the-cruncher",
+          "name": "THE CRUNCHER",
+          "description": "قطع دجاج كرانشي + موزاريلا + خيار مخلل + صوص الرانش + شرايح الرومي المدخن + صوص جبنه + مايونيز",
+          "image": "./menu-images/the cruncher.png",
+          "prices": [{ "price": "170 EGP" }]
+        }
+      ]
+    },
+    {
       "id": "beef-sandwiches",
       "name": "Beef Sandwiches",
       "items": [
@@ -39,116 +100,9 @@
         {
           "id": "pizza-doggo",
           "name": "PIZZA DOGGO",
-          "description": "ساندوتش هوت دوج بالطريقه الايطالي مغطى بالجبنه الموزاريلا والفلفل الاخضر والزيتون والزعتر وصوص الباربكيو",
+          "description": "ساندوتش هوت دوج بالطريقه الايطالي مغطى بالجبنه الموزاريلا والفلفل الاخضر والزيتون والزعتر وصوص الباربكيو + بصل",
           "image": "./menu-images/pizza doggo.png",
           "prices": [{ "price": "110 EGP" }]
-        }
-      ]
-    },
-    {
-      "id": "strips-meals",
-      "name": "Strips Meals",
-      "items": [
-        {
-          "id": "boomy-strips-3",
-          "name": "BOOMY STRIPS 3",
-          "description": "تلت قطع كرسبي استربس + واحد كيزر + فرايز + باربكيو",
-          "image": "./menu-images/Boomy strips.jpeg",
-          "prices": [{ "price": "140 EGP" }]
-        },
-        {
-          "id": "boomy-strips-5",
-          "name": "BOOMY STRIPS 5",
-          "description": "خمس قطع كرسبي استربس + 2 كيزر + فرايز + باربكيو + واحد كلو سلو",
-          "image": "./menu-images/Boomy strips.jpeg",
-          "prices": [{ "price": "210 EGP" }]
-        },
-        {
-          "id": "boomy-strips-9",
-          "name": "BOOMY STRIPS 9",
-          "description": "تسع قطع كرسبي استربس + 4 كيزر + فرايز + واحد باربكيو + واحد كلو سلو",
-          "image": "./menu-images/Boomy strips.jpeg",
-          "prices": [{ "price": "390 EGP" }]
-        },
-        {
-          "id": "chicken-nuggets",
-          "name": "Chicken Nuggets",
-          "description": "قطع الناجتس + كيزر + فرايز + عصير + كاتشب",
-          "image": "./menu-images/nuggets.jpeg",
-          "prices": [
-            { "size": "4 قطع", "price": "100 EGP" },
-            { "size": "6 قطع", "price": "120 EGP" }
-          ]
-        },
-        {
-          "id": "chicken-crispy-happy-meal",
-          "name": "Chicken Crispy Happy Meal",
-          "description": "قطعه من الدجاج المقرمش + فرايز + خس + عصير + مايونيز + حلقات الخيار",
-          "image": "./menu-images/Chicken crispy happy meal.jpeg",
-          "prices": [{ "price": "125 EGP" }]
-        },
-        {
-          "id": "burger-happy-meal",
-          "name": "Burger Happy Meal",
-          "description": "قطعه من البرجر المميز + خس + فرايز + عصير + صوص تاكسس",
-          "image": "./menu-images/Burger Happy meal.jpeg",
-          "prices": [{ "price": "125 EGP" }]
-        }
-      ]
-    },
-    {
-      "id": "chicken-sandwiches",
-      "name": "Chicken Sandwiches",
-      "items": [
-        {
-          "id": "sub-boom",
-          "name": "SUB BOOM",
-          "description": "صدور الدجاج المشويه المتبله بالتدبيله السرية + حلقات البصل المشوي + الخس + شرايح الطماطم + صوص المايونيز + خيار مخلل",
-          "image": "./menu-images/sub boom.jpeg",
-          "prices": [{ "price": "140 EGP" }]
-        },
-        {
-          "id": "big-boom",
-          "name": "BIG BOOM",
-          "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + موزاريلا + خيار مخلل",
-          "image": "./menu-images/Big boom.png",
-          "prices": [
-            { "size": "SINGLE", "price": "145 EGP" },
-            { "size": "DOUBLE", "price": "180 EGP" },
-            { "size": "TRIPLE", "price": "220 EGP" }
-          ]
-        },
-        {
-          "id": "the-cruncher",
-          "name": "THE CRUNCHER",
-          "description": "قطع دجاج كرانشي + موزاريلا + خيار مخلل + صوص الرانش + شرايح الرومي المدخن + صوص جبنه + مايونيز",
-          "image": "./menu-images/the cruncher.png",
-          "prices": [{ "price": "170 EGP" }]
-        },
-        {
-          "id": "original-chick",
-          "name": "ORIGINAL CHICK",
-          "description": "قطعه من صدور الدجاج المقرمشه بصوص الزبده + كلو سلو",
-          "image": "./menu-images/original chick.png",
-          "prices": [{ "price": "140 EGP" }]
-        },
-        {
-          "id": "chick-inferno",
-          "name": "CHICK INFERNO",
-          "description": "قطعه من صدور الفراخ المقرمشه مغطى بصوص حار جداً + كلو سلو + صوص الجبنه",
-          "image": "./menu-images/Chick inferno.jpeg",
-          "prices": [{ "price": "220 EGP" }]
-        },
-        {
-          "id": "onion-boom",
-          "name": "ONION BOOM",
-          "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + حلقات بصل + بصل مكرمل",
-          "image": "./menu-images/onion boom.jpeg",
-          "prices": [
-            { "size": "SINGLE", "price": "145 EGP" },
-            { "size": "DOUBLE", "price": "180 EGP" },
-            { "size": "TRIPLE", "price": "220 EGP" }
-          ]
         }
       ]
     },
@@ -180,30 +134,81 @@
         {
           "id": "boomy-6",
           "name": "BOOMY 6",
-          "description": "ست قطع فرايد شيكن + 2 فرايز + 2 كلو سلو + 4 كيزر + 6 كاتشب",
+          "description": "ست قطع فرايد شيكن + 1 فرايز عائلي + 2 كلو سلو + 4 كيزر + 6 كاتشب",
           "image": "./menu-images/boomy 6.jpeg",
           "prices": [{ "price": "365 EGP" }]
         },
         {
           "id": "boomy-8",
           "name": "BOOMY 8",
-          "description": "ثمان قطع فرايد شيكن + 4 فرايز + 3 كلو سلو + 6 كيزر + 8 كاتشب + 1.25L",
+          "description": "ثمان قطع فرايد شيكن + 1 فرايز عائلي + 3 كلو سلو + 6 كيزر + 8 كاتشب + 1.25 بيج كولا",
           "image": "./menu-images/boomy 8.jpeg",
           "prices": [{ "price": "495 EGP" }]
         },
         {
           "id": "boomy-12",
           "name": "BOOMY 12",
-          "description": "اثنا عشر قطعه فرايد شيكن + 4 فرايز + 4 كلو سلو + 6 كيزر + 10 كاتشب + 1.25L",
+          "description": "اثنا عشر قطعه فرايد شيكن + 2 فرايز عائلي + 4 كلو سلو + 6 كيزر + 10 كاتشب + 1.25 لتر بيج كولا",
           "image": "./menu-images/boomy 20.jpeg",
           "prices": [{ "price": "695 EGP" }]
         },
         {
           "id": "boomy-20",
           "name": "BOOMY 20",
-          "description": "عشرون قطعه فرايد شيكن + 6 فرايز + 4 كلو سلو + 8 كيزر + 15 كاتشب + 2.5L",
+          "description": "عشرون قطعه فرايد شيكن + 2 فرايز عائلي + 4 كلو سلو + 8 كيزر + 15 كاتشب + 2.5 لتر بيج كولا",
           "image": "./menu-images/boomy 20.jpeg",
           "prices": [{ "price": "1050 EGP" }]
+        }
+      ]
+    },
+    {
+      "id": "strips-meals",
+      "name": "Strips Meals",
+      "items": [
+        {
+          "id": "boomy-strips-3",
+          "name": "BOOMY STRIPS 3",
+          "description": "تلت قطع كرسبي استربس + واحد كيزر + فرايز + باربكيو",
+          "image": "./menu-images/Boomy strips.jpeg",
+          "prices": [{ "price": "140 EGP" }]
+        },
+        {
+          "id": "boomy-strips-5",
+          "name": "BOOMY STRIPS 5",
+          "description": "خمس قطع ستربس + 2 كيزر + فرايز + كلو سلو + صوص الباربكيو",
+          "image": "./menu-images/Boomy strips.jpeg",
+          "prices": [{ "price": "210 EGP" }]
+        },
+        {
+          "id": "boomy-strips-9",
+          "name": "BOOMY STRIPS 9",
+          "description": "٩ قطع ستربس + 4 كيزر + فرايز + كلو سلو + صوص الباربكيو",
+          "image": "./menu-images/Boomy strips.jpeg",
+          "prices": [{ "price": "390 EGP" }]
+        },
+        {
+          "id": "chicken-nuggets",
+          "name": "Chicken Nuggets",
+          "description": "قطع الناجتس + كيزر + فرايز + عصير + كاتشب",
+          "image": "./menu-images/nuggets.jpeg",
+          "prices": [
+            { "size": "4 قطع", "price": "100 EGP" },
+            { "size": "6 قطع", "price": "120 EGP" }
+          ]
+        },
+        {
+          "id": "chicken-crispy-happy-meal",
+          "name": "Chicken Crispy Happy Meal",
+          "description": "قطعه دجاج كرسبي + خس + مايونيز + شرايح خيار مخلل + فرايز + عصير",
+          "image": "./menu-images/Chicken crispy happy meal.jpeg",
+          "prices": [{ "price": "125 EGP" }]
+        },
+        {
+          "id": "burger-happy-meal",
+          "name": "Burger Happy Meal",
+          "description": "قطعه من البرجر المميز بصوص التكساس + خس + فرايز + عصير",
+          "image": "./menu-images/Burger Happy meal.jpeg",
+          "prices": [{ "price": "125 EGP" }]
         },
         {
           "id": "mac-cheese",
@@ -218,101 +223,12 @@
         {
           "id": "rezo",
           "name": "REZO",
-          "description": "الارز الاصفر المميز من تشيكي بوم + قطعه استربس مقرمشه",
+          "description": "الارز الاصفر المميز من تشيكي بوم + قطع الاستربس + صوص الباربكيو",
           "image": "./menu-images/ريزو.jpeg",
           "prices": [
             { "size": "تشيكن", "price": "100 EGP" },
             { "size": "ساده", "price": "60 EGP" }
           ]
-        }
-      ]
-    },
-    {
-      "id": "drinks",
-      "name": "Drinks",
-      "items": [
-        {
-          "id": "big-cola",
-          "name": "BIG COLA",
-          "description": "مشروب غازي منعش ومنشط",
-          "image": "./menu-images/big cola.jpeg",
-          "prices": [{ "price": "15 EGP" }]
-        },
-        {
-          "id": "v-cola",
-          "name": "V COLA",
-          "description": "مشروب غازي بنكهة الكولا المنعشة",
-          "image": "./menu-images/v-cola.jpeg",
-          "prices": [{ "price": "30 EGP" }]
-        },
-        {
-          "id": "juice",
-          "name": "JUICE",
-          "description": "عصير طبيعي منعش فريش",
-          "image": "./menu-images/juice.jpeg",
-          "prices": [{ "price": "20 EGP" }]
-        },
-        {
-          "id": "water",
-          "name": "WATER",
-          "description": "مياه معدنية نقية ومنعشة",
-          "image": "./menu-images/water.jpeg",
-          "prices": [{ "price": "10 EGP" }]
-        }
-      ]
-    },
-    {
-      "id": "sauces",
-      "name": "Sauces",
-      "items": [
-        {
-          "id": "barbecue-sauce",
-          "name": "BARBECUE SAUCE",
-          "description": "صوص الباربكيو الحلو والمدخن",
-          "image": "./menu-images/barbecue sauce.jpeg",
-          "prices": [{ "price": "15 EGP" }]
-        },
-        {
-          "id": "mayonnaise",
-          "name": "MAYONNAISE",
-          "description": "صوص المايونيز الكريمي",
-          "image": "./menu-images/mayonnaise.jpeg",
-          "prices": [{ "price": "15 EGP" }]
-        },
-        {
-          "id": "ranch-dressing",
-          "name": "RANCH DRESSING",
-          "description": "صوص الرانش المميز مع الأعشاب",
-          "image": "./menu-images/ranch dressing.jpeg",
-          "prices": [{ "price": "20 EGP" }]
-        },
-        {
-          "id": "hot-dressing",
-          "name": "HOT DRESSING",
-          "description": "صوص حار ولاذع لمحبي التوابل",
-          "image": "./menu-images/hot sauce.jpeg",
-          "prices": [{ "price": "30 EGP" }]
-        },
-        {
-          "id": "ketchup",
-          "name": "KETCHUP",
-          "description": "صوص الطماطم الحلو واللاذع",
-          "image": "./menu-images/ketchup.jpeg",
-          "prices": [{ "price": "10 EGP" }]
-        },
-        {
-          "id": "cheddar-sauce",
-          "name": "CHEDDAR SAUCE",
-          "description": "صوص جبنة الشيدر الكريمي",
-          "image": "./menu-images/cheddar sauce.jpeg",
-          "prices": [{ "price": "20 EGP" }]
-        },
-        {
-          "id": "sweet-chilli",
-          "name": "SWEET CHILLI",
-          "description": "صوص حلو وحار بنكهة الفلفل",
-          "image": "./menu-images/sweet chilli.jpeg",
-          "prices": [{ "price": "25 EGP" }]
         }
       ]
     },
@@ -333,28 +249,35 @@
         {
           "id": "smoked-fries",
           "name": "SMOKED FRIES",
-          "description": "بطاطس مقلية مقرمشة وذهبية",
+          "description": "بطاطس + صوص الجبنه الشيدر + صوص تكساس + روز بيف + سموك تركي",
           "image": "./menu-images/Smoked fries.jpeg",
           "prices": [{ "price": "60 EGP" }]
         },
         {
           "id": "smash-fries",
           "name": "SMASH FRIES",
-          "description": "بطاطس مقلية مقرمشة وذهبية",
+          "description": "بطاطس + قطعه لحمه سماش + صوص التكساس + صوص شيدر",
           "image": "./menu-images/Smash fries.jpeg",
           "prices": [{ "price": "75 EGP" }]
         },
         {
           "id": "strips-fries",
           "name": "Strips Fries",
-          "description": "بطاطس مقلية مقرمشة وذهبية",
+          "description": "بطاطس بقطع الاستربس + صوص الشيدر",
           "image": "./menu-images/strips fries.jpeg",
           "prices": [{ "price": "75 EGP" }]
         },
         {
+          "id": "cheese-fries",
+          "name": "CHEESE FRIES",
+          "description": "بطاطس مقلية مغطاة بصوص الجبنة الشيدر",
+          "image": "./menu-images/Cheese fries.jpeg",
+          "prices": [{ "price": "55 EGP" }]
+        },
+        {
           "id": "roast-beef",
           "name": "ROAST BEEF",
-          "description": "شرائح لحم البقر المشوي الطري",
+          "description": "",
           "image": "./menu-images/Roast Beaf.jpeg",
           "prices": [{ "price": "20 EGP" }]
         },
@@ -382,6 +305,166 @@
             { "size": "6 قطع", "price": "65 EGP" },
             { "size": "9 قطع", "price": "90 EGP" }
           ]
+        },
+
+        {
+          "id": "jalapeno",
+          "name": "JALAPENO",
+          "description": "فلفل هالبينو حار",
+          "image": "./menu-images/Jalapeno.jpg",
+          "prices": [{ "price": "10 EGP" }]
+        },
+        {
+          "id": "mozzarella-sticks",
+          "name": "MOZZARELLA STICKS",
+          "description": "أصابع جبنة الموزاريلا المقلية والمقرمشة",
+          "image": "./menu-images/Jalapeno sticks.jpeg",
+          "prices": [{ "size": "4 قطع", "price": "60 EGP" }]
+        },
+        {
+          "id": "jalapeno-sticks",
+          "name": "JALAPENO STICKS",
+          "description": "أصابع هالبينو حاره بالجبنه الشيدر ",
+          "image": "./menu-images/Jalapeno sticks.jpeg",
+          "prices": [{ "size": "3 قطع", "price": "60 EGP" }]
+        },
+        {
+          "id": "beef-bacon",
+          "name": "BEEF BACON",
+          "description": "شرائح بيكون البقر المشوي",
+          "image": "./menu-images/beef bacon.png",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
+          "id": "pickles",
+          "name": "خيار مخلل",
+          "description": "خيار مخلل شرائح",
+          "image": "./menu-images/pickles.jpeg",
+          "prices": [{ "price": "10 EGP" }]
+        }
+      ]
+    },
+    {
+      "id": "sauces",
+      "name": "Sauces",
+      "items": [
+        {
+          "id": "barbecue-sauce",
+          "name": "BARBECUE SAUCE",
+          "description": "صوص الباربكيو",
+          "image": "./menu-images/barbecue sauce.jpeg",
+          "prices": [{ "price": "15 EGP" }]
+        },
+        {
+          "id": "mayonnaise",
+          "name": "MAYONNAISE",
+          "description": "صوص المايونيز",
+          "image": "./menu-images/mayonnaise.jpeg",
+          "prices": [{ "price": "15 EGP" }]
+        },
+        {
+          "id": "ranch-dressing",
+          "name": "RANCH DRESSING",
+          "description": "صوص الرانش",
+          "image": "./menu-images/ranch dressing.jpeg",
+          "prices": [{ "price": "25 EGP" }]
+        },
+        {
+          "id": "hot-dressing",
+          "name": "HOT DRESSING",
+          "description": "صوص حار",
+          "image": "./menu-images/hot sauce.jpeg",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
+          "id": "ketchup",
+          "name": "KETCHUP",
+          "description": "صوص الكاتشب",
+          "image": "./menu-images/ketchup.jpeg",
+          "prices": [{ "price": "10 EGP" }]
+        },
+        {
+          "id": "cheddar-sauce",
+          "name": "CHEDDAR SAUCE",
+          "description": "صوص جبنة الشيدر",
+          "image": "./menu-images/cheddar sauce.jpeg",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
+          "id": "sweet-chilli",
+          "name": "SWEET CHILLI",
+          "description": "",
+          "image": "./menu-images/sweet chilli.jpeg",
+          "prices": [{ "price": "25 EGP" }]
+        },
+        {
+          "id": "texas-sauce",
+          "name": "TEXAS SAUCE",
+          "description": "صوص تكساس",
+          "image": "./menu-images/Texas Sauce.jpeg",
+          "prices": [{ "price": "25 EGP" }]
+        },
+        {
+          "id": "toumya",
+          "name": "TOUMYA",
+          "description": "صوص التومية",
+          "image": "./menu-images/Toumya.png",
+          "prices": [{ "price": "15 EGP" }]
+        },
+        {
+          "id": "coleslaw",
+          "name": "COLESLAW",
+          "description": "سلطة الكول سلو الطازجة",
+          "image": "./menu-images/coleslaw.jpeg",
+          "prices": [{ "price": "25 EGP" }]
+        },
+        {
+          "id": "boom-fire",
+          "name": "BOOM FIRE",
+          "description": "🌶️🌶️صوص بوم فاير الحار جداً",
+          "image": "./menu-images/Boom fire.jpeg",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
+          "id": "mushroom-demi-glace",
+          "name": "MUSHROOM DEMI-GLACE",
+          "description": "صوص الديمي جلاس بنكهة المشروم",
+          "image": "./menu-images/mushroom demi glace.jpg",
+          "prices": [{ "price": "30 EGP" }]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "big-cola",
+          "name": "BIG COLA",
+          "description": "مشروب غازي",
+          "image": "./menu-images/big cola.jpeg",
+          "prices": [{ "price": "15 EGP" }]
+        },
+        {
+          "id": "v-cola",
+          "name": "V COLA",
+          "description": "مشروب غازي",
+          "image": "./menu-images/v-cola.jpeg",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
+          "id": "juice",
+          "name": "JUICE",
+          "description": "عصير",
+          "image": "./menu-images/juice.jpeg",
+          "prices": [{ "price": "20 EGP" }]
+        },
+        {
+          "id": "water",
+          "name": "WATER",
+          "description": "مياه معدنية",
+          "image": "./menu-images/water.jpeg",
+          "prices": [{ "price": "10 EGP" }]
         }
       ]
     }
