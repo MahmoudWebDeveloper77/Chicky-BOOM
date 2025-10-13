@@ -289,31 +289,20 @@
           "prices": [{ "price": "20 EGP" }]
         },
         {
+          "id": "beef-bacon",
+          "name": "BEEF BACON",
+          "description": "شرائح بيكون البقر المشوي",
+          "image": "./menu-images/beef bacon.png",
+          "prices": [{ "price": "30 EGP" }]
+        },
+        {
           "id": "onion-rings",
           "name": "ONION RINGS",
           "description": "حلقات بصل مقلية ومقرمشة",
           "image": "./menu-images/Onion rings.jpeg",
           "prices": [{ "size": "خمس قطع", "price": "50 EGP" }]
         },
-        {
-          "id": "nuggets",
-          "name": "NUGGETS",
-          "description": "قطع ناجتس الدجاج المقرمشة",
-          "image": "./menu-images/nuggets.jpeg",
-          "prices": [
-            { "size": "4 قطع", "price": "50 EGP" },
-            { "size": "6 قطع", "price": "65 EGP" },
-            { "size": "9 قطع", "price": "90 EGP" }
-          ]
-        },
 
-        {
-          "id": "jalapeno",
-          "name": "JALAPENO",
-          "description": "فلفل هالبينو حار",
-          "image": "./menu-images/Jalapeno.jpg",
-          "prices": [{ "price": "10 EGP" }]
-        },
         {
           "id": "mozzarella-sticks",
           "name": "MOZZARELLA STICKS",
@@ -329,17 +318,28 @@
           "prices": [{ "size": "3 قطع", "price": "60 EGP" }]
         },
         {
-          "id": "beef-bacon",
-          "name": "BEEF BACON",
-          "description": "شرائح بيكون البقر المشوي",
-          "image": "./menu-images/beef bacon.png",
-          "prices": [{ "price": "30 EGP" }]
+          "id": "nuggets",
+          "name": "NUGGETS",
+          "description": "قطع ناجتس الدجاج المقرمشة",
+          "image": "./menu-images/nuggets.jpeg",
+          "prices": [
+            { "size": "4 قطع", "price": "50 EGP" },
+            { "size": "6 قطع", "price": "65 EGP" },
+            { "size": "9 قطع", "price": "90 EGP" }
+          ]
         },
         {
           "id": "pickles",
           "name": "خيار مخلل",
           "description": "خيار مخلل شرائح",
           "image": "./menu-images/pickles.jpeg",
+          "prices": [{ "price": "10 EGP" }]
+        },
+        {
+          "id": "jalapeno",
+          "name": "JALAPENO",
+          "description": "فلفل هالبينو حار",
+          "image": "./menu-images/Jalapeno.jpg",
           "prices": [{ "price": "10 EGP" }]
         }
       ]
