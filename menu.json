@@ -277,15 +277,15 @@
         {
           "id": "roast-beef",
           "name": "ROAST BEEF",
-          "description": "",
-          "image": "./menu-images/Roast Beaf.jpeg",
+          "description": "شرائح اللحم المدخن",
+          "image": "./menu-images/Roast beef.png",
           "prices": [{ "price": "20 EGP" }]
         },
         {
           "id": "smoked-turkey",
           "name": "SMOKED TURKEY",
           "description": "شرائح الديك الرومي المدخن",
-          "image": "./menu-images/smoked beef.jpeg",
+          "image": "./menu-images/smoked beef.jpg",
           "prices": [{ "price": "20 EGP" }]
         },
         {
