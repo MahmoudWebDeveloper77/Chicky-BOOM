@@ -1,11 +1,6 @@
 {
   "categories": [
     {
-      "id": "offers",
-      "name": "Offers",
-      "items": []
-    },
-    {
       "id": "chicken-sandwiches",
       "name": "Chicken Sandwiches",
       "items": [
