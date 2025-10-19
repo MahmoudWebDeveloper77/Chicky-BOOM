@@ -5,131 +5,148 @@ async function loadMenuData() {
   try {
     const response = await fetch("./menu.json");
     menuData = await response.json();
-    displayProducts();
+    displayMenu(); // Show full menu initially
   } catch (error) {
     console.error("Error loading menu data:", error);
   }
 }
 
-// Function to create product card HTML
-function createProductCard(item) {
+// Function to create menu card HTML
+function createMenuCard(item) {
   let priceHTML = "";
 
   if (item.prices.length === 1 && !item.prices[0].size) {
-    // Single price without size
     priceHTML = `<span>${item.prices[0].price}</span>`;
-  } else if (item.prices.length === 1) {
-    // Single price with size
-    priceHTML = `
-            <div class="first-price">
-              <span>${item.prices[0].size}</span>
-              <span>${item.prices[0].price}</span>
-            </div>
-          `;
   } else {
-    // Multiple prices
     priceHTML = item.prices
       .map(
-        (price, index) =>
-          `
-            <div class="${
-              index === 0
-                ? "first-price"
-                : index === 1
-                ? "second-price"
-                : "third-price"
-            }">
-              <span>${price.size}</span>
-              <span>${price.price}</span>
-            </div>
-          `
+        (price, index) => `
+        <div class="${
+          index === 0
+            ? "first-price"
+            : index === 1
+            ? "second-price"
+            : "third-price"
+        }">
+          <span>${price.size || ""}</span>
+          <span>${price.price}</span>
+        </div>
+      `
       )
       .join("");
   }
 
-  return `<div class="menu-card">
-            <div class="menu-image-container">
-              <img src="${item.image}"  />
-            </div>
-            <div class="inner-menu-card">
-              <h3>${item.name}</h3>
-              <p>
-                ${item.description}
-              </p>
-              <div class="menu-price">${priceHTML}</div>
-              <div class="shine-effect"></div>
-            </div>
-          </div>`;
+  return `
+    <div class="menu-card">
+      <div class="menu-image-container">
+        <img src="${item.image}" />
+      </div>
+      <div class="inner-menu-card">
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <div class="menu-price">${priceHTML}</div>
+        <div class="shine-effect"></div>
+      </div>
+    </div>`;
 }
 
-// Function to display products by category
-function displayProducts(categoryId = null) {
-  // Check if menu data is loaded
-  if (!menuData) {
-    console.error("Menu data not loaded yet");
-    return;
-  }
-
+// Function to display menu by category or full
+function displayMenu(categoryId = null) {
   const menuContainer = document.getElementById("menu-container");
   const categoryTitle = document.getElementById("category-title");
+  const offersContainer = document.getElementById("offers-container");
 
-  // Clear existing products
-  menuContainer.innerHTML = "";
+  // Always hide offers when viewing menu
+  offersContainer.style.display = "none";
+  menuContainer.style.display = "flex";
+
+  let html = "";
 
   if (categoryId) {
-    // Show specific category
     const category = menuData.categories.find((cat) => cat.id === categoryId);
-    if (category) {
-      categoryTitle.textContent = category.name.toUpperCase();
-      category.items.forEach((item) => {
-        menuContainer.innerHTML += createProductCard(item);
-      });
-    }
+    categoryTitle.textContent = category.name.toUpperCase();
+    category.items.forEach((item) => {
+      html += createMenuCard(item);
+    });
   } else {
-    // Show all products (full menu)
     categoryTitle.textContent = "FULL MENU";
     menuData.categories.forEach((category) => {
       category.items.forEach((item) => {
-        menuContainer.innerHTML += createProductCard(item);
+        html += createMenuCard(item);
       });
     });
   }
+
+  menuContainer.innerHTML = html;
+  categoryTitle.scrollIntoView({ behavior: "smooth" });
 }
 
-// Function to set up category navigation
+// Setup category navigation
 function setupCategoryNavigation() {
   const navLinks = document.querySelectorAll("a[data-category]");
-  const categoryTitle = document.getElementById("category-title");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const categoryId = this.getAttribute("data-category");
-      displayProducts(categoryId);
-      categoryTitle.scrollIntoView({ behavior: "smooth" });
+      if (categoryId === "offers") {
+        showOffers();
+      } else {
+        displayMenu(categoryId);
+      }
     });
   });
 }
 
-// Initialize the page
-document.addEventListener("DOMContentLoaded", function () {
-  loadMenuData();
-  setupCategoryNavigation();
-});
-
-document.getElementById("restaurent-name").addEventListener("click", () => {
+// Fetch and show offers
+async function showOffers() {
+  const offersContainer = document.getElementById("offers-container");
   const menuContainer = document.getElementById("menu-container");
   const categoryTitle = document.getElementById("category-title");
 
-  menuContainer.innerHTML = "";
-  categoryTitle.textContent = "FULL MENU";
-  menuData.categories.forEach((category) => {
-    category.items.forEach((item) => {
-      menuContainer.innerHTML += createProductCard(item);
-    });
+  offersContainer.style.display = "flex";
+  menuContainer.style.display = "none";
+  categoryTitle.textContent = "OFFERS";
+
+  try {
+    const offersResponse = await fetch("./offers.json");
+    const offersData = await offersResponse.json();
+    displayOffers(offersData.offers);
+  } catch (error) {
+    console.error("Error fetching offers:", error);
+  }
+
+  categoryTitle.scrollIntoView({ behavior: "smooth" });
+}
+
+function displayOffers(offers) {
+  const offersContainer = document.getElementById("offers-container");
+  let html = "";
+
+  offers.forEach((offer) => {
+    html += `
+      <div class="menu-card">
+        <div class="menu-image-container">
+          <img src="${offer.image}" />
+        </div>
+        <div class="inner-menu-card">
+          <h3>${offer.name}</h3>
+          <p>${offer.description}</p>
+          <div class="menu-price">${offer.price}</div>
+          <div class="shine-effect"></div>
+        </div>
+      </div>`;
   });
+
+  offersContainer.innerHTML = html;
+}
+
+// Reset to full menu when clicking restaurant name
+document.getElementById("restaurent-name").addEventListener("click", () => {
+  displayMenu();
 });
 
+// Scroll behavior styling
 document.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   const hero = document.querySelector(".hero");
@@ -142,7 +159,6 @@ document.addEventListener("scroll", () => {
     restaurantName.classList.add("colored");
     navButtons.forEach((btn) => btn.classList.add("colored-button"));
 
-    // Close the navbar if it is open
     const navbarCollapse = document.getElementById("navbarNav");
     if (navbarCollapse && navbarCollapse.classList.contains("show")) {
       const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
@@ -153,4 +169,9 @@ document.addEventListener("scroll", () => {
     restaurantName.classList.remove("colored");
     navButtons.forEach((btn) => btn.classList.remove("colored-button"));
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadMenuData();
+  setupCategoryNavigation();
 });
