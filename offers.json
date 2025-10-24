@@ -4,126 +4,126 @@
       "id": "master-offer-6",
       "name": "MASTER OFFER 6",
       "description": "٥ قطع ستربس + ماك تشيز + بطاطس + ١ كلو سلو + ١ مشروب ",
-      "image": "",
+      "image": "./menu-images/offers/master offer 6.jpeg",
       "price": "170 EGP"
     },
     {
       "id": "master-offer-3",
       "name": "MASTER OFFER 3",
       "description": "سندوتش كرانشر + دوججي + بطاطس سموك",
-      "image": "",
+      "image": "./menu-images/offers/master offer 3.jpeg",
       "price": "250 EGP"
     },
     {
       "id": "master-offer-2",
       "name": "MASTER OFFER 2",
       "description": "٢ قطعتين بروست + سندوتش بووم سماش + بطاطس + ١ كلو سلو + ١ مشروب",
-      "image": "",
+      "image": "./menu-images/offers/master offer 2.jpeg",
       "price": "220 EGP"
     },
     {
       "id": "master-offer-5",
       "name": "MASTER OFFER 5",
       "description": "٨ قطع بروست + ٤ سندوتش بووم سماش + بطاطس + ٤ كلو سلو + ٤ مشروب",
-      "image": "",
+      "image": "./menu-images/offers/master offer 5.jpeg",
       "price": "750 EGP"
     },
     {
       "id": "master-offer-8",
       "name": "MASTER OFFER 8",
       "description": "سندوش بيج بووم + سندوتش اونيون بووم + ساندوتش بووم سماش + سندوتش بيكو سماش",
-      "image": "",
+      "image": "./menu-images/offers/master offer 8.jpeg",
       "price": "650 EGP"
     },
     {
       "id": "master-offer-7",
       "name": "MASTER OFFER 7",
       "description": "٤ قطع بروست + ساندوتش بووم سماش + ساندوتش اوريجينال بووم + بطاطس + ٢ كلو سلو + ٢ مشروب",
-      "image": "",
+      "image": "./menu-images/offers/master offer 7.jpeg",
       "price": "440 EGP"
     },
     {
       "id": "master-offer",
       "name": "MASTER OFFER",
       "description": "٢ قطعتين بروست + سندوتش بوم سماش + بطاطس + ١ كلو سلو + ١ مشروب",
-      "image": "",
+      "image": "./menu-images/offers/master offer.jpeg",
       "price": "170 EGP"
     },
     {
       "id": "master-offer-1",
       "name": "MASTER OFFER 1",
       "description": "٤ قطع بروست + ساندوتش بووم سماش + ساندوتش اوريجينال بووم + بطاطس + ٢ كلو سلو + ٢ مشروب",
-      "image": "",
+      "image": "./menu-images/offers/master offer 1.jpeg",
       "price": "400 EGP"
     },
     {
       "id": "قطعتين-بروست",
       "name": "قطعتين بروست",
       "description": "كاتشب + بطاطس",
-      "image": "",
+      "image": "./menu-images/offers/قطعتين بروست.jpeg",
       "price": "99 EGP"
     },
     {
       "id": "ماك-اند-تشيز",
       "name": "ماك اند شيز",
       "description": "٢ قطعتين بروست + بطاطس + كاتشب ",
-      "image": "",
+      "image": "./menu-images/offers/ماك اند تشيز.jpeg",
       "price": "99 EGP"
     },
     {
       "id": "سماش-برجر",
       "name": "سماش برجر",
       "description": "صوص الجبنه الشيدر + صوص تكساس + بطاطس",
-      "image": "",
+      "image": "./menu-images/offers/سماش برجر.jpeg",
       "price": "99 EGP"
     },
     {
       "id": "تشيكن-كلاسك",
       "name": "تشيكن كلاسك",
       "description": "١ قطعه دجاج مقرمشه مع صوص المايونيز + خس + خيار مخلل + بطاطس",
-      "image": "",
+      "image": "./menu-images/offers/تشيكن كلاسيك.jpeg",
       "price": "99 EGP"
     },
     {
       "id": "عرض-ميلانو-كومبو",
       "name": "عرض ميلانو كومبو",
       "description": "كولا + بطاطس مجاناً -- زودها ٤٠ جنيه وخد ٢ قطعتين استربس",
-      "image": "",
+      "image": "./menu-images/offers/ميلانو كومبو.jpeg",
       "price": "285 EGP"
     },
     {
       "id": "عرض-ماكس-تشكن",
       "name": "عرض ماكس تشيكن",
       "description": "٣ تلت قطع بروست + ريزو تشيكن + بيج كولا -- زودها ١٠ جنيه وخد بطاطس",
-      "image": "",
+      "image": "./menu-images/offers/عرض ماكس تشيكن.jpeg",
       "price": "195 EGP"
     },
     {
       "id": "عرض-كومبو-الشله",
       "name": "عرض كومبو الشله",
       "description": "١٢ اثنا عشر قطعه فراخ + ٨ قطع ستريبس + فرايز + كلو سلو + مشروب + كايزر + كاتشب",
-      "image": "",
+      "image": "./menu-images/offers/عرض كومبو الشله.jpeg",
       "price": "900 EGP"
     },
     {
       "id": "عرض-كومبو-الدلع",
       "name": "عرض كومبو الدلع ",
       "description": "٤ قطع فراخ + ٤ قطع ستربس + فرايز + كلو سلو + مشروب + كايزر + كاتشب",
-      "image": "",
+      "image": "./menu-images/offers/عرض كومبو الدلع.jpeg",
       "price": "400 EGP"
     },
     {
       "id": "عرض-كومبو-اللمه",
       "name": "عرض كومبو اللمه",
       "description": "٢٠ عشرون قطعه فراخ + ٤ سندوتشات(سماش و تشيكن) + فرايز + كلو سلو + مشروب + كاتشب + كايزر",
-      "image": "",
+      "image": "./menu-images/offers/عرض-كومبو-اللمه.jpeg",
       "price": "1300 EGP"
     },
     {
       "id": "عرض-بوم-بوم",
       "name": "عرض بوم بوم",
       "description": "٨ قطع فراخ + ساندوتش بيج بوم + ساندوتش بيكو سماش + فرايز + كلو سلو + مشروب + عيش + كاتشب",
-      "image": "",
+      "image": "./menu-images/offers/عرض-بوم-بوم.jpeg",
       "price": "700 EGP"
     }
   ]

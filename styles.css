@@ -182,16 +182,26 @@ a {
   letter-spacing: 1px;
 }
 
-.socials {
+.whatsApp-para {
   text-align: center;
 }
 
-.socials a {
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.socials a,
+.whatsApp-para a {
   transition: color 0.5s ease-in-out;
   color: #333;
 }
 
-.socials a:hover {
+.socials a:hover,
+.whatsApp-para a:hover {
   color: rgb(177, 2, 2);
 }
 
