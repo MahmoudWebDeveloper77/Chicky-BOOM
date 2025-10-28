@@ -4,56 +4,56 @@
       "id": "master-offer-6",
       "name": "MASTER OFFER 6",
       "description": "٥ قطع ستربس + ماك تشيز + بطاطس + ١ كلو سلو + ١ مشروب ",
-      "image": "./menu-images/offers/master offer 6.jpeg",
+      "image": "./menu-images/offers/master offer 6.png",
       "price": "170 EGP"
     },
     {
       "id": "master-offer-3",
       "name": "MASTER OFFER 3",
       "description": "سندوتش كرانشر + دوججي + بطاطس سموك",
-      "image": "./menu-images/offers/master offer 3.jpeg",
+      "image": "./menu-images/offers/master offer 3.png",
       "price": "250 EGP"
     },
     {
       "id": "master-offer-2",
       "name": "MASTER OFFER 2",
       "description": "٢ قطعتين بروست + سندوتش بووم سماش + بطاطس + ١ كلو سلو + ١ مشروب",
-      "image": "./menu-images/offers/master offer 2.jpeg",
+      "image": "./menu-images/offers/master offer 2.png",
       "price": "220 EGP"
     },
     {
       "id": "master-offer-5",
       "name": "MASTER OFFER 5",
       "description": "٨ قطع بروست + ٤ سندوتش بووم سماش + بطاطس + ٤ كلو سلو + ٤ مشروب",
-      "image": "./menu-images/offers/master offer 5.jpeg",
+      "image": "./menu-images/offers/master offer 5.png",
       "price": "750 EGP"
     },
     {
       "id": "master-offer-8",
       "name": "MASTER OFFER 8",
       "description": "سندوش بيج بووم + سندوتش اونيون بووم + ساندوتش بووم سماش + سندوتش بيكو سماش",
-      "image": "./menu-images/offers/master offer 8.jpeg",
+      "image": "./menu-images/offers/master offer 8.png",
       "price": "650 EGP"
     },
     {
       "id": "master-offer-7",
       "name": "MASTER OFFER 7",
       "description": "٤ قطع بروست + ساندوتش بووم سماش + ساندوتش اوريجينال بووم + بطاطس + ٢ كلو سلو + ٢ مشروب",
-      "image": "./menu-images/offers/master offer 7.jpeg",
+      "image": "./menu-images/offers/master offer 7.png",
       "price": "440 EGP"
     },
     {
       "id": "master-offer",
       "name": "MASTER OFFER",
       "description": "٢ قطعتين بروست + سندوتش بوم سماش + بطاطس + ١ كلو سلو + ١ مشروب",
-      "image": "./menu-images/offers/master offer.jpeg",
+      "image": "./menu-images/offers/master offer.png",
       "price": "170 EGP"
     },
     {
       "id": "master-offer-1",
       "name": "MASTER OFFER 1",
       "description": "٤ قطع بروست + ساندوتش بووم سماش + ساندوتش اوريجينال بووم + بطاطس + ٢ كلو سلو + ٢ مشروب",
-      "image": "./menu-images/offers/master offer 1.jpeg",
+      "image": "./menu-images/offers/master offer 1.png",
       "price": "400 EGP"
     },
     {
