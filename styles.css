@@ -8,6 +8,8 @@ body {
   font-family: sans-serif;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @font-face {
