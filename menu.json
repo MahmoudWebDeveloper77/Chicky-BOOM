@@ -9,6 +9,7 @@
           "name": "BIG BOOM",
           "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + موزاريلا + خيار مخلل",
           "image": "./menu-images/chicken-sandwichs/Big boom.png",
+          "type": "SPICY",
           "prices": [
             { "size": "SINGLE", "price": "145 EGP" },
             { "size": "DOUBLE", "price": "180 EGP" },
@@ -27,6 +28,7 @@
           "name": "ONION BOOM",
           "description": "قطعه من صدور الفراخ المقرمشه + تركي مدخن + صوص شيدر + صوص الرانش المميز + خس + حلقات بصل + بصل مكرمل",
           "image": "./menu-images/chicken-sandwichs/onion boom.jpeg",
+          "type": "SPICY",
           "prices": [
             { "size": "SINGLE", "price": "145 EGP" },
             { "size": "DOUBLE", "price": "180 EGP" },
@@ -38,6 +40,7 @@
           "name": "CHICK INFERNO",
           "description": "قطعه من صدور الفراخ المقرمشه مغطى بصوص حار جداً + كلو سلو + صوص الجبنه",
           "image": "./menu-images/chicken-sandwichs/Chick inferno.jpeg",
+          "type": "SPICY",
           "prices": [{ "price": "220 EGP" }]
         },
         {
@@ -52,6 +55,7 @@
           "name": "THE CRUNCHER",
           "description": "قطع دجاج كرانشي + موزاريلا + خيار مخلل + صوص الرانش + شرايح الرومي المدخن + صوص جبنه + مايونيز",
           "image": "./menu-images/chicken-sandwichs/the cruncher.png",
+          "type": "SPICY",
           "prices": [{ "price": "170 EGP" }]
         }
       ]
@@ -138,6 +142,7 @@
           "name": "BOOMY 8",
           "description": "ثمان قطع فرايد شيكن + 1 فرايز عائلي + 3 كلو سلو + 6 كيزر + 8 كاتشب + 1.25 بيج كولا",
           "image": "./menu-images/boomy meals/boomy 8.jpeg",
+          "type": "عائلي",
           "prices": [{ "price": "495 EGP" }]
         },
         {
@@ -152,6 +157,7 @@
           "name": "BOOMY 20",
           "description": "عشرون قطعه فرايد شيكن + 2 فرايز عائلي + 4 كلو سلو + 8 كيزر + 15 كاتشب + 2.5 لتر بيج كولا",
           "image": "./menu-images/boomy meals/boomy 20.jpeg",
+          "type": "عائلي",
           "prices": [{ "price": "1050 EGP" }]
         }
       ]
@@ -210,6 +216,7 @@
           "name": "MAC CHEESE",
           "description": "مكرونه بصوص الجبنه المميز من تشيكي بوم",
           "image": "./menu-images/boomy meals/ماك تشيز.jpeg",
+          "type": "SPICY",
           "prices": [
             { "size": "تشيكن", "price": "110 EGP" },
             { "size": "ساده", "price": "65 EGP" }
@@ -220,6 +227,7 @@
           "name": "REZO",
           "description": "الارز الاصفر المميز من تشيكي بوم + قطع الاستربس + صوص الباربكيو",
           "image": "./menu-images/boomy meals/ريزو.jpeg",
+          "type": "SPICY",
           "prices": [
             { "size": "تشيكن", "price": "100 EGP" },
             { "size": "ساده", "price": "60 EGP" }

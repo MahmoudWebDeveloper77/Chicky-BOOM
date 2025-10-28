@@ -37,17 +37,24 @@ function createMenuCard(item) {
   }
 
   return `
-    <div class="menu-card">
-      <div class="menu-image-container">
-        <img src="${item.image}" />
-      </div>
-      <div class="inner-menu-card">
-        <h3>${item.name}</h3>
-        <p>${item.description}</p>
-        <div class="menu-price">${priceHTML}</div>
-        <div class="shine-effect"></div>
-      </div>
-    </div>`;
+  <div class="menu-card">
+    ${
+      item.type
+        ? `<div class="badge ${item.type === "عائلي" ? "family-badge" : ""}">${
+            item.type
+          }</div>`
+        : ""
+    }
+    <div class="menu-image-container">
+      <img src="${item.image}" />
+    </div>
+    <div class="inner-menu-card">
+      <h3>${item.name}</h3>
+      <p>${item.description}</p>
+      <div class="menu-price">${priceHTML}</div>
+      <div class="shine-effect"></div>
+    </div>
+  </div>`;
 }
 
 // Function to display menu by category or full

@@ -254,6 +254,27 @@ a {
   overflow: hidden;
   cursor: pointer;
   height: 400px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: -40px;
+  background: red;
+  color: white;
+  padding: 5px 50px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  transform: rotate(-45deg);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.family-badge {
+  color: white;
+  background-color: green;
 }
 
 .inner-menu-card {
