@@ -424,8 +424,9 @@
         {
           "id": "boom-fire",
           "name": "BOOM FIRE",
-          "description": "🌶️🌶️صوص بوم فاير الحار جداً",
+          "description": "صوص بوم فاير الحار جداً",
           "image": "./menu-images/sauces/Boom fire.jpeg",
+          "type": "SPICY",
           "prices": [{ "price": "30 EGP" }]
         },
         {
